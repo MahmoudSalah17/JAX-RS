@@ -12,7 +12,10 @@ class Repo {
 
 
     public Repo() {
-
+        ArrayList<Student> studentsArray = new ArrayList<>();
+        studentsArray.add(new Student("1", "Salah"));
+        studentsArray.add(new Student("2", "Zaher"));
+        writeToFileJson(studentsArray);
     }
 
     public ArrayList<Student> getAllStudents()
